@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>My Profile</title>
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+
+        <!-- left panel - User Navigation -->
+        <div class="profilePanel">
+            <img src="img/profile-user.png" alt="profile-user"><br>
+            <p>Hello, John</p><br>
+
+            <!-- Navigation Buttons -->
+            <button id="btnMyProfile">
+                <span class="button-left">
+                    <i class="fas fa-user"></i> My Profile
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+            <button id="btnNotifications">
+                <span class="button-left">
+                    <i class="fas fa-bell"></i> Notification
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+            <button id="btnOrders">
+                <span class="button-left">
+                    <i class="fa-solid fa-cart-shopping"></i> Orders
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+            <button id="btnLogOut">
+                <span class="button-left">
+                    <i class="fas fa-sign-out-alt"></i> Log Out
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+        </div>
+
+        <!-- Right Panel - Main Content Area (Display User Information) -->
+        <div class="contentPanel">
+
+            <!-- Back link to Home -->
+            <a href="#" class="back-link">
+                <i class="fas fa-chevron-left"></i> Home
+            </a>
+
+            <!-- Profile header section -->
+            <div class="profile-details">
+                <img src="img/profile-user.png" alt="profile-user" style="width: 130px; float: left; margin-right: 25px; margin-left: 15px;">
+                <h1 style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 0;">John Fernando</h1>
+                <p>johnfernando@gmail.com</p>
+            </div>
+
+            <!-- User Info Fields -->
+            <div class="profile-details" style="color: grey; font-family: Arial, Helvetica, sans-serif;">
+                <h2 style="margin-bottom: 0; float: left; margin-right: 350px; padding: 15px 15px;">Name</h2>
+                <h2 style="padding: 15px 0px">John Fernando</h2>
+            </div>
+            <div class="profile-details" style="color: grey; font-family: Arial, Helvetica, sans-serif;">
+                <h2 style="margin-bottom: 0; float: left; margin-right: 350px; padding: 15px 15px;">Email</h2>
+                <h2 style="padding: 15px 0px">johnfernando@gmail.com</h2>
+            </div>
+            <div class="profile-details" style="color: grey; font-family: Arial, Helvetica, sans-serif;">
+                <h2 style="margin-bottom: 0; float: left; margin-right: 245px; padding: 15px 15px;">Mobile number</h2>
+                <h2 style="padding: 15px 0px">071 2451235</h2>
+            </div>
+            <div class="profile-details" style="color: grey; font-family: Arial, Helvetica, sans-serif;">
+                <h2 style="margin-bottom: 0; float: left; margin-right: 315px; padding: 15px 15px;">Location</h2>
+                <h2 style="padding: 15px 0px">Colombo</h2>
+            </div>
+            
+            <!-- Save Button for Updating Profile -->
+            <button class="save-button">Save</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Button Actions -->
+    <script src="user_profile_click_events.js"></script>
+</body>
+</html>
