@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Notification</title>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Left panel - User navigation -->
+        <div class="profilePanel">
+            <img src="img/profile-user.png" alt="profile-user"><br>
+            <p>Hello, John</p><br>
+
+            <!-- Navigation buttons -->
+            <button id="btnMyProfile">
+                <span class="button-left">
+                    <i class="fas fa-user"></i> My Profile
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+            <button id="btnNotifications">
+                <span class="button-left">
+                    <i class="fas fa-bell"></i> Notification
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+            <button id="btnOrders">
+                <span class="button-left">
+                    <i class="fa-solid fa-cart-shopping"></i> Orders
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+            <button id="btnLogOut">
+                <span class="button-left">
+                    <i class="fas fa-sign-out-alt"></i> Log Out
+                </span>
+                <i class="fas fa-chevron-right button-right"></i>
+            </button><br>
+        </div>
+
+        <!-- Right panel - Main content area (Dislay User info and Notification messages) -->
+        <div class="contentPanel">
+
+            <!-- Back link to return to the HomePage -->
+            <a href="#" class="back-link">
+                <i class="fas fa-chevron-left"></i> Home
+            </a>
+
+            <!-- User Header section -->
+            <div class="noti" style="margin-bottom: 50px;">
+                <img src="img/profile-user.png" alt="profile-user" style="width: 130px; float: left; margin-right: 25px; margin-left: 15px;">
+                <h1 style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 0;">John Fernando</h1>
+                <p>johnfernando@gmail.com</p>
+            </div>
+
+            <!-- Notification List Section -->
+            <div class="noti" style="color: grey; font-family: Arial, Helvetica, sans-serif;">
+                <h2 style="padding: 15px; margin-left: 75px;">Notification</h2>
+            </div>
+            <div class="noti" style="color: grey; font-family: Arial, Helvetica, sans-serif;">
+                <h2 style="padding: 15px; margin-left: 75px;">Notification</h2>
+            </div>
+            <div class="noti" style="color: grey; font-family: Arial, Helvetica, sans-serif;">
+                <h2 style="padding: 15px; margin-left: 75px;">Notification</h2>
+            </div>
+            
+            <!-- Clear button -->
+            <button class="clear-button">Clear</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for handling navigation and button click events -->
+    <script src="user_profile_click_events.js"></script>
+</body>
+</html>
